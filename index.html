@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Video Editing Portfolio</title>
+    <style>
+    html {
+    scroll-behavior: smooth;
+}
+    body {
+        background: #100b18;
+        color: white;
+        text-align: center;
+        font-family: Arial, sans-serif;
+    }
+
+    .video-card {
+        width: 320px;
+        margin: 30px auto;
+        padding: 15px;
+        background: #1d1428;
+        border-radius: 15px;
+    }
+
+    .video-card video {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .video-card h3 {
+        color: #c084fc;
+        margin-top: 15px;
+    }
+
+    .video-card p {
+        color: #ccc;
+    }
+    h1 {
+    color: #d8b4fe;
+    font-size: 45px;
+    margin-top: 40px;
+}
+
+h2 {
+    color: #c084fc;
+    font-size: 32px;
+    margin-top: 50px;
+}
+nav {
+    background: #1d1428;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: #d8b4fe;
+    text-decoration: none;
+    margin: 0 8px;
+    font-weight: bold;
+}
+nav a:hover {
+    color: white;
+}
+.video-card video {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.video-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(192, 132, 252, 0.25);
+}
+form {
+    width: 90%;
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin: 8px 0;
+    background: #1d1428;
+    color: white;
+    border: 1px solid #c084fc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    color: #aaa;
+}
+
+form textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+form button {
+    background: #7c3aed;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #ffffff;
+    box-shadow: 0 0 10px rgba(192, 132, 252, 0.4);
+}
+footer {
+    margin-top: 50px;
+    padding: 25px;
+    background: #1d1428;
+    color: #aaa;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px;
+}
+</style>
+</head>
+
+<body>
+<nav>
+    <a href="#home">Home</a>
+    <a href="#work">My Work</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+    <h1 id="home">My Video Editing Portfolio 🎬</h1>
+
+    <p>Creative Video Editor | Aesthetic Edits | Reels & Shorts</p>
+
+    <h2 id="work">My Work</h2>
+    <section class="about">
+
+    <h2 id="about">About Me ✨</h2>
+
+    <p>
+        I am a creative video editor who loves making
+        aesthetic, cinematic and engaging videos.
+    </p>
+
+</section>
+<section class="services">
+
+    <h2 id="services">My Services 🎬</h2>
+
+    <p>✨ Reels & Shorts Editing</p>
+    <p>🎨 Aesthetic Video Editing</p>
+    <p>🎞️ Cinematic Edits</p>
+    <p>📝 Text & Caption Editing</p>
+
+</section>
+<section class="contact">
+
+    <h2 id="contact">Contact Me 📩</h2>
+
+    <p>If you like my work, feel free to contact me!</p>
+
+    <a href="mailto:your@email.com">Email Me</a>
+<form onsubmit="sendMessage(event)">
+
+    <input type="text" placeholder="Your Name">
+
+    <input type="email" placeholder="Your Email">
+
+    <textarea placeholder="Your Message"></textarea>
+
+    <button type="submit">Send Message 📩</button>
+
+</form>
+</section>
+<div class="video-card">
+
+    <video controls>
+        <source src="edit1.mp4" type="video/mp4">
+    </video>
+
+    <h3>Aesthetic Edit 🎬</h3>
+    <p>Creative aesthetic video edit with smooth transitions.</p>
+
+    <a href="edit1.mp4" target="_blank">
+    <button>View Project 🎬</button>
+</a>
+
+</div>
+<div class="video-card">
+
+    <video controls width="300">
+        <source src="edit2.mp4" type="video/mp4">
+    </video>
+
+    <h3>Cinematic Edit ✨</h3>
+
+    <p>A smooth cinematic video edit with creative transitions.</p>
+<a href="edit2.mp4" target="_blank">
+    <button>View Project 🎬</button>
+</a>
+</div>
+<script>
+function showMessage() {
+    alert("Thanks for checking out my video! 🎬💜");
+}
+</script>
+<script>
+function sendMessage(event) {
+    event.preventDefault();
+
+    alert("Your message has been sent! 💜📩");
+}
+</script>
+<footer>
+    <p>© 2026 My Video Editing Portfolio 🎬</p>
+    <p>Made with 💜 and creativity</p>
+</footer>
+</body>
+  </html>
